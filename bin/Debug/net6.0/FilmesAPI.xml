@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FilmesAPI</name>
+    </assembly>
+    <members>
+        <member name="M:FilmesAPI.Controllers.FilmeController.AdicionaFilme(FilmesAPI.Data.Dtos.CreateFilmeDto)">
+            <summary>
+            Adiciona ao banco de dados
+            </summary>
+            <param name="filmeDto">Objeto com os campos necessários para criação de um filme</param>
+            <returns>IActionResult</returns>
+            <response code="201">Caso inserção seja feita com sucesso</response>
+        </member>
+        <member name="M:FilmesAPI.Controllers.FilmeController.RecuperaFilme(System.Int32,System.Int32)">
+            <summary>
+            Definições de busca com paginação ao banco de dados
+            </summary>
+            <param name="skip">Objeto com os campos necessários de busca mínima da paginação de um filme</param>
+            <param name="take">Objeto com os campos necessários de busca máxima da paginação de um filme</param>
+            <returns>IEnumerable</returns>
+            <response code="200">Caso inserção seja feita com sucesso</response>
+        </member>
+        <member name="M:FilmesAPI.Controllers.FilmeController.RecuperaFilmePorId(System.Int32)">
+            <summary>
+            Definições de busca por id ao banco de dados 
+            </summary>
+            <param name="id">Objeto com os campos necessários de busca por id de um filme</param>
+            <returns>IActionResult</returns>
+            <response code="200">Caso inserção seja feita com sucesso</response>
+        </member>
+        <member name="M:FilmesAPI.Controllers.FilmeController.AtualizaFilme(System.Int32,FilmesAPI.Data.Dtos.UpdateFilmeDto)">
+            <summary>
+            Definições de alteração de todos campos ao banco de dados 
+            </summary>
+            <param name="filmeDto">Objeto com os todos campos necessários de Alteração de um filme</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso inserção seja feita com sucesso</response>
+        </member>
+        <member name="M:FilmesAPI.Controllers.FilmeController.AtualizaFilmeParcial(System.Int32,Microsoft.AspNetCore.JsonPatch.JsonPatchDocument{FilmesAPI.Data.Dtos.UpdateFilmeDto})">
+            <summary>
+            Definições de alteração de um campo ao banco de dados 
+            </summary>
+            <param name="patch">Objeto com um campo necessário de Alteração de um filme</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso inserção seja feita com sucesso</response>
+        </member>
+        <member name="M:FilmesAPI.Controllers.FilmeController.DeletaFilme(System.Int32)">
+            <summary>
+            Deleta ao banco de dados 
+            </summary>
+            <param name="id">Objeto para deletar um filme</param>
+            <returns>IActionResult</returns>
+            <response code="204">Caso inserção seja feita com sucesso</response>
+        </member>
+        <member name="T:FilmesAPI.Migrations.CriandoTabelaDeFilme">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesAPI.Migrations.CriandoTabelaDeFilme.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesAPI.Migrations.CriandoTabelaDeFilme.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:FilmesAPI.Migrations.CriandoTabelaDeFilme.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>
