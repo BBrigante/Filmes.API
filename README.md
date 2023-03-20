@@ -17,7 +17,6 @@ SWAGGER
 
 <br>
 
-
 ## Tecnologias
 
 - VISUAL STUDIO 2022
